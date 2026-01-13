@@ -1,0 +1,17 @@
+#myimage {
+    
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; 
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#name{
+    margin-top:0%;
+}
+
