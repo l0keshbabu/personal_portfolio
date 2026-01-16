@@ -1,3 +1,7 @@
+.quick-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
 #myimage {
     
   width: 150px;
@@ -11,12 +15,34 @@
     align-items: center;
     flex-direction: column;
 }
+#greet {
+    color: #fff;
+    font-size: calc(100% + 1rem);
+    margin-bottom: 0px;
+    color: #eba104;
+}
 #name{
     margin-top:0%;
+    margin-bottom: 0%;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px rgb(88, 3, 93), 0 0 20px rgb(88, 3, 93), 0 0 40px rgb(88, 3, 93);
 }
+#role {
+  color: #ea37e1;
+  font-size: 16px;
+  margin-top: 9px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  letter-spacing: 1px;
+}
+
 .soc {
-    background-color: #1a1a1a;
-    border: 1px solid #333;
+
+    background-color: #383535;
+    border: 1px solid #686666;
     color: #fff;
     padding: 8px 16px;
     font-size: 14px;
@@ -24,13 +50,14 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 8px 2px;
     cursor: pointer;
     border-radius: 8px;
     transition: all .3s ease;
     font-family: inherit;
 }
 .socials {
+    margin-top: -15px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -40,7 +67,7 @@
     font-weight: 400;
     color-scheme: light dark;
     color: #ffffffde;
-    background-color: #e0c5c5;
+    background-color: #121010;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
