@@ -1,11 +1,31 @@
 .quick-nav{
     display: flex;
     justify-content: space-evenly;
+
+    
+}
+.nav{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 999px;         
+    transition: all 0.3s ease; 
+    font-family: inherit;   
+}
+.nav:hover{
+    background-color: #686666;
+}
+.nav-div{
+  width: 68%;              
+  height: 1px;
+  background-color: #555; 
+  margin: 20px auto 0;     
+
 }
 #myimage {
     
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%; 
 }
@@ -52,7 +72,7 @@
     text-decoration: none;
     margin: 8px 2px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 999px;
     transition: all .3s ease;
     font-family: inherit;
 }
