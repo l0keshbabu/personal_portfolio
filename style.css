@@ -45,7 +45,7 @@
     margin:10px;
     font-family: Lora, "Noto Sans SC";
     color: #fff;
-    font-size: clamp(48px, 6vw, 96px); /* 🔥 BIG like first image */
+    font-size: clamp(48px, 6vw, 96px);
   font-weight: 450;
   text-align: center;
 
@@ -110,8 +110,15 @@
   margin: 0 auto 40px;
 
 }
+.sec-backg{
+  width: 63%;
+  background-color: #555;
+  margin: auto;
+  padding: 30px 35px;
+  border-radius: 12px;
+}
 .about-content{
-    width: 67%;
+    width: 99%;
     margin: auto;
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -129,8 +136,63 @@
 
 }
 
-/* ONLY show when clicked */
 #about:target {
   display: block;
 }
 
+#skills {
+  display: none;
+  padding: 80px 20px;
+}
+
+
+#skills:target {
+  display: block;
+}
+
+
+.skills {
+  width: 66%;
+  margin: 0 auto;
+}
+
+
+.skill-group {
+  display: grid;
+  grid-template-columns: 40% 1fr; 
+  column-gap: 100px;
+  margin-bottom: 60px;
+}
+
+
+.skill-group h3 {
+  font-family: Outfit, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #ffbd39;
+  margin: 0;
+
+}
+
+
+.skill-items {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.skill-items span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+
+.skill-items i {
+  font-size: 30px;
+}
