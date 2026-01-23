@@ -196,3 +196,25 @@
 .skill-items i {
   font-size: 30px;
 }
+
+#projects {
+  display: none;
+  padding: 80px 20px;
+}
+
+
+#projects:target {
+  display: block;
+}
+.projects {
+  width: 66%;
+  margin: 0 auto;
+}
+.sec-head {
+    text-align: center;
+    font-family: Lora, "Noto Sans SC";
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 12px;
+}
