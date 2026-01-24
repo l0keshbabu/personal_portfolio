@@ -16,7 +16,7 @@
     background-color: #686666;
 }
 .nav-div{
-  width: 68%;              
+  width: 70%;              
   height: 1px;
   background-color: #555; 
   margin: 20px auto 0;     
@@ -218,3 +218,53 @@
     color: #fff;
     margin-bottom: 12px;
 }
+
+.project-card {
+  background-color: #555;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 30px;
+
+}
+.sec-line-mini {
+  width: 100%;
+  border-top: 1px solid rgba(36, 33, 33, 0.607);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.project-head
+{
+display: flex;
+justify-content: space-between;
+align-items:baseline
+}
+.project-head h3{
+  font-family:Lora, "Noto Sans SC" ;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+.project-year {
+  font-size: 16px;
+  color: #bdbdbd;
+  white-space:nowrap;
+}
+.project-desc{
+    width: 99%;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32.3px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    overflow-wrap: normal;
+}
+
+
+
+
+
+
+
