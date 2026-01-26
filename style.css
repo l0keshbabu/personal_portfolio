@@ -1,101 +1,133 @@
-.quick-nav{
-    display: flex;
-    justify-content: space-evenly;
 
-    
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
 }
-.nav{
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 18px;
-    border-radius: 999px;         
-    transition: all 0.3s ease; 
-    font-family: inherit;   
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-.nav:hover{
-    background-color: #686666;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #121010;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.nav-div{
-  width: 70%;              
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.quick-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.nav:hover {
+  background-color: #686666;
+}
+
+.nav-div {
+  width: 70%;
   height: 1px;
-  background-color: #555; 
-  margin: 20px auto 0;     
-
+  background-color: #555;
+  margin: 20px auto 0;
 }
+
+
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #myimage {
-    
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
-.head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 #greet {
-    color: #fff;
-    font-size: calc(100% + 1rem);
-    margin-bottom: 0px;
-    color: #eba104;
+  font-size: calc(100% + 1rem);
+  margin-bottom: 0;
+  color: #eba104;
 }
-#name{
-    margin:10px;
-    font-family: Lora, "Noto Sans SC";
-    color: #fff;
-    font-size: clamp(48px, 6vw, 96px);
+
+#name {
+  margin: 10px;
+  font-family: Lora, "Noto Sans SC";
+  color: #fff;
+  font-size: clamp(48px, 6vw, 96px);
   font-weight: 450;
   text-align: center;
-
   letter-spacing: 1px;
-    text-shadow: 0 0 5px #fff, 0 0 10px rgb(88, 3, 93), 0 0 20px rgb(88, 3, 93), 0 0 40px rgb(88, 3, 93);
+  text-shadow: 0 0 5px #fff, 0 0 10px rgb(88, 3, 93),
+    0 0 20px rgb(88, 3, 93), 0 0 40px rgb(88, 3, 93);
 }
+
 #role {
   color: #ea37e1;
   font-size: 16px;
   margin-top: 9px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  letter-spacing: 1px;
+}
+
+
+
+.socials {
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .soc {
+  background-color: #383535;
+  border: 1px solid #686666;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 8px 2px;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
 
-    background-color: #383535;
-    border: 1px solid #686666;
-    color: #fff;
-    padding: 8px 16px;
-    font-size: 14px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin: 8px 2px;
-    cursor: pointer;
-    border-radius: 999px;
-    transition: all .3s ease;
-    font-family: inherit;
+.soc:hover {
+  background-color: #555;
 }
-.socials {
-    margin-top: -15px;
-    display: flex;
-    justify-content: space-evenly;
+
+
+
+.section {
+  padding: 80px 20px;
 }
-:root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color-scheme: light dark;
-    color: #ffffffde;
-    background-color: #121010;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.sec-heading {
+
+.sec-heading,
+.sec-head {
   text-align: center;
   font-family: Lora, "Noto Sans SC";
   font-size: 36px;
@@ -103,52 +135,30 @@
   color: #fff;
   margin-bottom: 12px;
 }
-.sec-line{
+
+.sec-line {
   width: 68%;
   height: 1px;
   background-color: rgb(77, 73, 73);
   margin: 0 auto 40px;
-
 }
-.sec-backg{
+
+.sec-backg {
   width: 63%;
   background-color: #555;
   margin: auto;
   padding: 30px 35px;
   border-radius: 12px;
 }
-.about-content{
-    width: 99%;
-    margin: auto;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 32.3px;
-    letter-spacing: 0.5px;
-    text-align: justify;
-    overflow-wrap: normal;
-    
-  
-}
-#about {
-  display: none;
-  padding: 80px 20px;
 
+.about-content {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  text-align: justify;
 }
 
-#about:target {
-  display: block;
-}
-
-#skills {
-  display: none;
-  padding: 80px 20px;
-}
-
-
-#skills:target {
-  display: block;
-}
 
 
 .skills {
@@ -156,24 +166,19 @@
   margin: 0 auto;
 }
 
-
 .skill-group {
   display: grid;
-  grid-template-columns: 40% 1fr; 
+  grid-template-columns: 40% 1fr;
   column-gap: 100px;
   margin-bottom: 60px;
 }
 
-
 .skill-group h3 {
-  font-family: Outfit, sans-serif;
   font-size: 26px;
   font-weight: 500;
   color: #ffbd39;
   margin: 0;
-
 }
-
 
 .skill-items {
   display: flex;
@@ -182,41 +187,23 @@
   flex-wrap: wrap;
 }
 
-
 .skill-items span {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   font-size: 15px;
-  color: #ffffff;
 }
-
 
 .skill-items i {
   font-size: 30px;
 }
 
-#projects {
-  display: none;
-  padding: 80px 20px;
-}
 
 
-#projects:target {
-  display: block;
-}
 .projects {
   width: 66%;
   margin: 0 auto;
-}
-.sec-head {
-    text-align: center;
-    font-family: Lora, "Noto Sans SC";
-    font-size: 36px;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 12px;
 }
 
 .project-card {
@@ -224,47 +211,142 @@
   border-radius: 12px;
   padding: 24px 28px;
   margin-bottom: 30px;
+}
 
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
-.sec-line-mini {
-  width: 100%;
-  border-top: 1px solid rgba(36, 33, 33, 0.607);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.project-head
-{
-display: flex;
-justify-content: space-between;
-align-items:baseline
-}
-.project-head h3{
-  font-family:Lora, "Noto Sans SC" ;
+
+.project-head h3 {
   font-size: 22px;
   font-weight: 600;
-  margin: 0;
-  color: #ffffff;
 }
+
 .project-year {
   font-size: 16px;
   color: #bdbdbd;
-  white-space:nowrap;
-}
-.project-desc{
-    width: 99%;
-    margin: auto;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 32.3px;
-    letter-spacing: 0.5px;
-    text-align: justify;
-    overflow-wrap: normal;
 }
 
+.project-desc {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.sec-line-mini {
+  width: 100%;
+  border-top: 1px solid rgba(36, 33, 33, 0.6);
+  margin: 10px 0;
+}
 
 
 
+@media (max-width: 768px) {
 
+
+  .quick-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+  #myimage {
+    width: 140px;
+    height: 140px;
+  }
+
+  #name {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  #role {
+    font-size: 14px;
+  }
+
+
+  .socials {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+ 
+  .sec-backg,
+  .skills,
+  .projects {
+    width: 92%;
+    padding: 20px;
+  }
+
+  .sec-line {
+    width: 90%;
+  }
+
+
+  .skill-group {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .skill-items {
+    justify-content: center;
+    gap: 25px;
+  }
+
+
+  .project-head {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .project-desc {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+#about,
+#skills,
+#projects,
+#certs {
+  display: none;
+  padding: 80px 20px;
+}
+
+#about:target,
+#skills:target,
+#projects:target,
+#certs:target {
+  display: block;
+}
+
+.to-top {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.to-top a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 50%;
+  background-color: #383535;
+  border: 1px solid #686666;
+  color: #4da3ff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.to-top a:hover {
+  background-color: #555;
+  transform: translateY(-3px);
+}
 
 
