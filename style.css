@@ -211,6 +211,8 @@ body {
   border-radius: 12px;
   padding: 24px 28px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-head {
@@ -348,5 +350,19 @@ body {
   background-color: #555;
   transform: translateY(-3px);
 }
+
+.project-github {
+  margin-top: 10px;
+  margin-left: auto;     
+  
+  font-size: 30px;       
+
+  text-decoration: none;
+}
+
+.project-github:hover {
+  color: #ffffff;
+}
+
 
 
