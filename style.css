@@ -364,5 +364,59 @@ body {
   color: #ffffff;
 }
 
+.certificates {
+  width: 66%;
+  margin: 0 auto;
+}
 
+.certificate_card{
+    background-color: #555;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cert_head h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cert-year {
+  font-size: 16px;
+  color: #bdbdbd;
+}
+
+.cert-desc {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  margin-bottom: 0px; 
+}
+.project-desc,
+.cert-desc,
+.cert-points,
+.cert-points li {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.cert-points li
+{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  margin-top: 5px; 
+  padding-left: 20px;
+}
 
