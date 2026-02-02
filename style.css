@@ -419,4 +419,14 @@ body {
   margin-top: 5px; 
   padding-left: 20px;
 }
-
+.cert-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.cert-link .certificate_card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cert-link:hover .certificate_card {
+  transform: translateY(-4px);
+}
