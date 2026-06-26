@@ -1,0 +1,48 @@
+/* .app-shell {
+  position: relative;
+} */
+
+/* ============================================================
+   SIGNATURE ELEMENT — the "signal rail"
+   A faint vertical trace running behind the page, evoking a
+   circuit / oscilloscope trace — a quiet nod to Lokesh's IoT
+   background. Lives behind content, never competes with it.
+   ============================================================ */
+/* .signal-rail {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--max-width);
+  max-width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.signal-rail__line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--rail-x);
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--border) 12%,
+    var(--border) 88%,
+    transparent 100%
+  );
+  opacity: 0.6;
+}
+
+@media (max-width: 720px) {
+  .signal-rail {
+    display: none;
+  }
+}
+
+main {
+  position: relative;
+  z-index: 1;
+} */
