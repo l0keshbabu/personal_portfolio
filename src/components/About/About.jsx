@@ -14,7 +14,7 @@ function About() {
       <div className="section-inner">
         <Reveal>
           <p className="eyebrow">01 · About</p>
-          <h2 className="section-title">From sensors to interfaces</h2>
+          <h2 className="section-title">Building software with purpose</h2>
         </Reveal>
 
         <div className="about__grid">
@@ -33,9 +33,9 @@ function About() {
             </p>
             <p>
               Right now I'm strengthening my DSA fundamentals, improving my problem-solving
-              one consistent rep at a time. Given the opportunity, I want to apply that mix
-              of hardware intuition and software craft to build software and IoT solutions
-              that hold up in the real world.
+              one consistent rep at a time. Given the opportunity, I want to apply my
+              technical knowledge and curiosity to design, build, and maintain reliable software
+              solutions that create meaningful real-world impact.
             </p>
           </Reveal>
 

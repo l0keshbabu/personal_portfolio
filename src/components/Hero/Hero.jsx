@@ -60,14 +60,18 @@ function Hero() {
               algorithms fundamentals, one problem at a time.
             </p>
 
-            {/* <div className="hero__actions">
-              <a href="#projects" className="btn btn--primary">
-                View Projects
+            <div className="hero__actions">
+              <a
+                href="/Lokesh_Babu_Katta_Resume.pdf"
+                className="btn btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                <i className="fa-regular fa-file-lines"></i>
+                <span>Download Resume</span>
               </a>
-              <a href="#certs" className="btn btn--ghost">
-                See Certifications
-              </a>
-            </div> */}
+            </div>
 
             <div className="hero__socials">
               {SOCIALS.map(({ href, icon, label }) => (
