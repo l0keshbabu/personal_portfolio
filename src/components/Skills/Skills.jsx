@@ -14,7 +14,7 @@ const SKILL_GROUPS = [
     title: 'Frameworks',
     items: [
       { name: 'React', icon: 'fa-brands fa-react' },
-      { name: 'Angular', icon: 'fa-brands fa-angular' },
+      
       { name: 'Django', icon: 'fa-solid fa-leaf' },
     ],
   },
@@ -33,7 +33,7 @@ function Skills() {
       <div className="section-inner">
         <Reveal>
           <p className="eyebrow">02 · Skills</p>
-          <h2 className="section-title">Tech I reach for</h2>
+          <h2 className="section-title">Technologies I Work With</h2>
         </Reveal>
 
         <div className="skills__grid">
