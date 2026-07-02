@@ -42,7 +42,7 @@ const CERTS = [
     'Oracle Cloud Infrastructure (OCI) AI services and use cases',
     'Responsible AI principles and practical AI applications',
   ],
-  link: 'YOUR_ORACLE_CERTIFICATE_LINK',
+  link: 'https://drive.google.com/file/d/1thz6BOjQTZhenypA3CRQmtmYPGyMZYlY/view',
 },
 ]
 
