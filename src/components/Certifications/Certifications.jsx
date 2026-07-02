@@ -30,20 +30,20 @@ const CERTS = [
     ],
     link: 'https://drive.google.com/file/d/1qy_LbLAPemi85nzFq307HQX9eXpG46IN/view?usp=drive_link',
   },
-  {
-    title: 'Microsoft Azure Fundamentals (AZ-900)',
-    issuer: 'Microsoft',
-    year: '2024',
-    description:
-      'Core cloud concepts and Azure services — architecture, compute, networking, storage, and security fundamentals.',
-    points: [
-      'Azure Compute: Virtual Machines, App Services, and Containers',
-      'Azure Storage: Blob, File, and Disk Storage',
-      'Cloud Concepts: IaaS, PaaS, SaaS, shared responsibility model',
-      'Security & Identity: Azure Active Directory basics',
-    ],
-    link: 'https://www.credly.com/badges/61321ca1-9609-4634-add5-b7a22f0e5e05/public_url',
-  },
+{
+  title: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate',
+  issuer: 'Oracle University',
+  year: '2025',
+  description:
+  'Foundational certification covering AI concepts, Generative AI, Large Language Models (LLMs), and Oracle Cloud AI services.',
+  points: [
+    'Fundamentals of Artificial Intelligence and Machine Learning',
+    'Generative AI concepts, Large Language Models (LLMs), and Prompt Engineering',
+    'Oracle Cloud Infrastructure (OCI) AI services and use cases',
+    'Responsible AI principles and practical AI applications',
+  ],
+  link: 'YOUR_ORACLE_CERTIFICATE_LINK',
+},
 ]
 
 function Certifications() {
