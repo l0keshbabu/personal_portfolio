@@ -14,7 +14,7 @@ const CERTS = [
       'Database design and CRUD operations using MySQL',
       'Understanding full-stack architecture and application flow',
     ],
-    link: 'https://official-certificate-link',
+    link: 'https://drive.google.com/file/d/1Ek62H3ENMFyKy788n9NFFY1Hdc3L3EQE/view?usp=sharing',
   },
   {
     title: 'Wipro TalentNext — Java Full Stack Development',
