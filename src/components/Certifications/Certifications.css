@@ -1,10 +1,16 @@
+/* .certs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 36px;
+} */
 .certs__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
   margin-top: 36px;
+  align-items: stretch;
 }
-
 .cert-card {
   display: flex;
   flex-direction: column;
@@ -19,9 +25,10 @@
 
 .cert-card:hover {
   transform: translateY(-6px);
-  border-color: var(--gold);
-  box-shadow: 0 22px 44px -22px var(--gold-soft);
+  border-color: var(--pink);
+  box-shadow: 0 22px 44px -22px var(--glow);
 }
+
 
 .cert-card__head {
   display: flex;
@@ -29,8 +36,8 @@
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 10px;
+  min-height: 100px;
 }
-
 .cert-card__head h3 {
   font-family: var(--font-display);
   font-size: 17px;
@@ -51,13 +58,14 @@
   flex-shrink: 0;
 }
 
+
 .cert-card__desc {
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-muted);
   margin: 0 0 16px;
+  min-height: 95px;
 }
-
 .cert-card__points {
   list-style: none;
   display: grid;
