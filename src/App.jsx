@@ -29,9 +29,19 @@ function App() {
       const el = document.getElementById(id)
       if (el) observer.observe(el)
     })
+      const handleScroll = () => {
+  const aboutSection = document.getElementById('about')
 
-    return () => observer.disconnect()
-  }, [])
+  if (aboutSection && window.scrollY < aboutSection.offsetTop - 120) {
+    setActiveSection('')
+  }
+}
+
+window.addEventListener('scroll', handleScroll)
+    return () => {
+  observer.disconnect()
+  window.removeEventListener('scroll', handleScroll)
+}}, [])
 
   return (
     <div className="app-shell">
