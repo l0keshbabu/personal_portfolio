@@ -72,14 +72,7 @@ function Navbar({ activeSection }) {
             {label}
           </a>
         ))}
-        <a
-          href="https://github.com/l0keshbabu"
-          target="_blank"
-          rel="noreferrer"
-          onClick={handleLinkClick}
-        >
-          GitHub
-        </a>
+        
       </nav>
     </header>
   )

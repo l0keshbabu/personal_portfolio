@@ -183,7 +183,7 @@
 .navbar__links--mobile-open a:nth-child(2) { transition-delay: 0.1s; }
 .navbar__links--mobile-open a:nth-child(3) { transition-delay: 0.15s; }
 .navbar__links--mobile-open a:nth-child(4) { transition-delay: 0.2s; }
-.navbar__links--mobile-open a:nth-child(5) { transition-delay: 0.25s; }
+
 
 @media (max-width: 720px) {
   .navbar__links--desktop,
