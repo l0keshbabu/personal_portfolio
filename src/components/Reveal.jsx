@@ -1,11 +1,14 @@
-import { motion } from 'framer-motion'
 
-/**
- * Reveal — wraps children in a fade-up-on-scroll animation.
- * Shared across sections so every reveal feels consistent.
- */
+import { motion, useReducedMotion } from 'framer-motion'
+
 function Reveal({ children, delay = 0, className = '', as = 'div' }) {
   const MotionTag = motion[as] || motion.div
+  const shouldReduceMotion = useReducedMotion()
+
+  if (shouldReduceMotion) {
+    const Tag = as
+    return <Tag className={className}>{children}</Tag>
+  }
 
   return (
     <MotionTag

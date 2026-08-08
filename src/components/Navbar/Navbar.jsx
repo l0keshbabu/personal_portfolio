@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { motion, useReducedMotion } from 'framer-motion'
 import './Navbar.css'
 
 const LINKS = [
@@ -11,6 +12,7 @@ const LINKS = [
 function Navbar({ activeSection }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const shouldReduceMotion = useReducedMotion()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
@@ -20,13 +22,14 @@ function Navbar({ activeSection }) {
 
   const handleLinkClick = () => setMenuOpen(false)
 
+  const underlineTransition = shouldReduceMotion
+    ? { duration: 0 }
+    : { type: 'spring', stiffness: 380, damping: 32 }
+
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
-        {/* <a href="#root" className="navbar__brand" aria-label="Back to top">
-          <span className="navbar__brand-mark">LBK</span>
-          <span className="navbar__brand-text">Lokesh Babu Katta</span>
-        </a> */}
+       
 
         <nav className="navbar__links navbar__links--desktop" aria-label="Section navigation">
           {LINKS.map(({ id, label }) => (
@@ -36,22 +39,20 @@ function Navbar({ activeSection }) {
               className={`navbar__link ${activeSection === id ? 'navbar__link--active' : ''}`}
             >
               {label}
+              {activeSection === id && (
+                <motion.span
+                  className="navbar__underline"
+                  layoutId="navbar-underline"
+                  transition={underlineTransition}
+                />
+              )}
             </a>
           ))}
         </nav>
 
-        {/* <a
-          className="navbar__cta navbar__cta--desktop"
-          href="https://github.com/l0keshbabu"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa-brands fa-github" aria-hidden="true" />
-          GitHub
-        </a> */}
 
         <button
-          className="navbar__toggle"
+          className={`navbar__toggle ${menuOpen ? 'navbar__toggle--open' : ''}`}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
