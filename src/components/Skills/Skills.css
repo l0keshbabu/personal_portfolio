@@ -53,6 +53,12 @@
 .skills__item i {
   font-size: 26px;
   color: var(--text);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.skills__item:hover i {
+  transform: scale(1.12);
+  color: var(--gold);
 }
 
 @media (max-width: 900px) {

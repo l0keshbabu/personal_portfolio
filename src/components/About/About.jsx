@@ -39,17 +39,17 @@ function About() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.12} className="about__facts">
-            {FACTS.map(({ label, value, icon }) => (
-              <div className="about__fact" key={label}>
-                <i className={icon} aria-hidden="true" />
-                <div>
-                  <span className="about__fact-label">{label}</span>
-                  <span className="about__fact-value">{value}</span>
-                </div>
-              </div>
-            ))}
-          </Reveal>
+          <div className="about__facts">
+  {FACTS.map(({ label, value, icon }, i) => (
+    <Reveal delay={0.12 + i * 0.06} className="about__fact" key={label}>
+      <i className={icon} aria-hidden="true" />
+      <div>
+        <span className="about__fact-label">{label}</span>
+        <span className="about__fact-value">{value}</span>
+      </div>
+    </Reveal>
+  ))}
+</div>
         </div>
       </div>
     </section>
