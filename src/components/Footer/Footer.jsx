@@ -1,5 +1,5 @@
 import './Footer.css'
-
+import Reveal from '../Reveal.jsx'
 const SOCIALS = [
   { href: 'https://github.com/l0keshbabu', icon: 'fa-brands fa-github', label: 'GitHub' },
   {
@@ -15,7 +15,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="section-inner footer__inner">
+      <Reveal as="div" className="section-inner footer__inner">
         <div>
           <p className="footer__brand">Lokesh Babu Katta</p>
           <p className="footer__tagline">Aspiring Software Engineer &amp; Full Stack Developer  </p>
@@ -32,7 +32,7 @@ function Footer() {
         <a href="#root" className="footer__top">
           Back to top <i className="fa-solid fa-arrow-up" aria-hidden="true" />
         </a>
-      </div>
+      </Reveal>
 
       <p className="footer__copy">© {year} Lokesh Babu Katta. Built with React.</p>
     </footer>
