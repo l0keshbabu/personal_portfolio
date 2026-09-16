@@ -6,10 +6,10 @@ const PROJECTS = [
     title: 'Chef Claude',
     year: '2026',
     description:
-      'An AI-powered recipe generator built with React, integrating external APIs to turn user-provided ingredients into dynamic recipes. Covers hooks (useState, useEffect, useRef), conditional rendering, controlled components, async data handling, secure env-based API keys, and markdown rendering.',
-    tags: ['React', 'API Integration', 'Hooks'],
+        'A full-stack AI-powered recipe generator built with React and FastAPI, using Groq to generate customized recipes from user-provided ingredients and cuisine preferences. Covers React hooks, REST API integration, Pydantic validation, CORS, server-side API key management, asynchronous data handling, and Markdown rendering.',
+    tags: ['React', 'FastAPI', 'Groq', 'REST API'],
     github: 'https://github.com/l0keshbabu/chef_claude',
-  },
+},
   {
     title: 'Smart Stress Monitoring System',
     year: '2025',

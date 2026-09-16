@@ -72,7 +72,7 @@ function Hero() {
             </motion.p>
 
             <motion.div className="hero__actions" variants={item}>
-              <a href="/Lokesh_Babu_Katta_Resume.pdf" className="btn btn--primary" target="_blank" rel="noopener noreferrer" download>
+              <a href="/Lokesh_Babu_Katta_Resume_01092026.pdf" className="btn btn--primary" target="_blank" rel="noopener noreferrer" download>
                 <i className="fa-regular fa-file-lines"></i>
                 <span>Download Resume</span>
               </a>

@@ -16,12 +16,15 @@ const SKILL_GROUPS = [
       { name: 'React', icon: 'fa-brands fa-react' },
       
       { name: 'Django', icon: 'fa-solid fa-leaf' },
+
+       { name: 'FastAPI', icon: 'fa-solid fa-bolt' },
     ],
   },
   {
     title: 'Tools',
     items: [
       { name: 'MS Office', icon: 'fa-solid fa-file-word' },
+       { name: 'Git', icon: 'fa-brands fa-git-alt' },
       { name: 'GitHub', icon: 'fa-brands fa-github' },
     ],
   },
